@@ -467,7 +467,7 @@ main .landing .landing-container .landing-info .landing-social ul li a span{
 /* About */
 
 #about{
-    background-image: url(/images/edward-unsplash-blur.jpg);
+    background-image: url(../images/edward-unsplash-blur.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -723,8 +723,9 @@ main .artist .card-content a:hover{
 
 
 #schedule{
-    background-image: url(/images/nainoa-shizuru-unsplash-blur.jpg);
+    background-image: url(../images/nainoa-shizuru-unsplash-blur.jpg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     padding: 6.25rem 0;
 }
@@ -811,21 +812,21 @@ main .schedule-table table tbody td p{
 
 
 main .schedule-table table .background-pop{
-    background-image: url(/images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg);
+    background-image: url(../images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
 }
 
 main .schedule-table table .background-roll{
-    background-image: url(/images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg);
+    background-image: url(../images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
 }
 
 main .schedule-table table .background-country{
-    background-image: url(/images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg);
+    background-image: url(../images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg);
     background-position: center;
     background-size: cover;
     position: relative;

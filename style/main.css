@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #F8CB2E;
+    --secondary-color: #EE5007;
+    --section-bg-color: #f0f8ff;
+    --custom-btn-bg-color: #EE5007;
+    --custom-btn-bg-hover-color: #c01f27;
+    --p-color: #717275;
+    --link-hover-color: #B22727;
+    --body-font-family: 'Outfit', sans-serif;
+}
+
+body{
+    font-family: var(--body-font-family);
+    background-color: #B22727;
+}
+
+p{color: var(--primary-color);}

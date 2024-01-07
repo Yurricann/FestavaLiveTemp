@@ -601,6 +601,10 @@ main .about .about-picture .about-image .image-info .content p{
 }
 
 
+main #artist h2.title{
+    color: #000;
+}
+
 main .artist .cards{
     display: flex;
     justify-content: center;

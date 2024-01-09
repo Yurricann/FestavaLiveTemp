@@ -24,6 +24,7 @@ html{
 
 body{
     font-family: var(--body-font-family);
+    overflow-x: hidden;
 }
 
 a{
@@ -52,6 +53,7 @@ main .title{
 .container{
     width: 100%;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 @media (min-width: 576px){
@@ -229,6 +231,10 @@ nav.moving{
 @media (max-width: 1200px){
     nav ul{
         margin-right: 0;
+    }
+
+    nav ul .navLink{
+        font-size: 1rem;
     }
 }
 
@@ -592,7 +598,25 @@ main .about .about-picture .about-image .image-info .content p{
     main .about .about-picture{
         width: 100%;
     }
+    main .about .about-picture .about-image .image-info{
+        max-height: 80%;
+    }
 }
+
+@media (max-width:767px){
+    main .about .about-picture .about-image .image-info{
+        padding: 1.5rem;
+    }
+
+    main .about .about-picture .about-image .image-info .content h2{
+        font-size: 1.3rem;
+    }
+    main .about .about-picture .about-image .image-info .content p{
+        font-size: 0.8rem;
+    }
+}
+
+
 
 /* Artist */
 
@@ -625,18 +649,6 @@ main .artist .left-card{
 
 main .artist .right-card{
     width: 42%;
-}
-
-@media (max-width: 992px) {
-    main .artist .cards{
-        flex-direction: column;
-    }
-    main .artist .left-card{
-        width: 100%;
-    }
-    main .artist .right-card{
-        width: 100%;
-    }
 }
 
 main .artist .right-card .card:nth-child(1){
@@ -723,6 +735,51 @@ main .artist .card-content a:hover{
 }
 
 
+@media (max-width: 992px) {
+    main .artist .cards{
+        flex-direction: column;
+    }
+    main .artist .left-card{
+        width: 100%;
+    }
+    main .artist .right-card{
+        width: 100%;
+    }
+}
+
+@media (max-width:767px){
+    main .artist .card-content{
+        max-height: 80%;
+        padding: 10px;
+    }
+
+    main .artist .card-content p{
+        font-size: 1rem;
+    }
+    
+    
+    main .artist .left-card p span{
+        min-width: 30px;
+
+    }
+    main .artist .right-card p span{
+        min-width: 30px;
+        margin-right: 0.5rem;
+    }
+
+    main .artist .right-card .card-content p{
+        font-size: 1rem;
+    }
+    
+    main .artist .card-content hr{
+        margin: 1rem 0;
+    }
+    
+    main .artist .card-content a{
+        font-size: 1rem;
+    }
+}
+
 /* Schedule */
 
 
@@ -737,6 +794,7 @@ main .artist .card-content a:hover{
 
 main .schedule-table{
     filter: drop-shadow(2px 2px 4px #606060);
+    overflow: auto;
 }
 
 main .schedule-table table{
@@ -1123,7 +1181,7 @@ footer .links{
 }
 
 footer .links .container{
-    padding: 2rem 0;
+    padding: 2rem;
     display: flex;
     justify-content: space-between;
 }
@@ -1270,6 +1328,14 @@ footer .navi .container .footer3 a:hover span {
         width: 50%;
     }
     
+}
+
+@media (max-width: 992px) {
+    footer .navi .container .footer1 ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
 
 footer .copyrights{
